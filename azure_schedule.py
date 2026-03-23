@@ -7,7 +7,7 @@ def sayHello():
     print(f'固定每十秒鐘 {now}')
 
 
-schedule.every(10).seconds.do(sayHello).unit("12:00")
+schedule.every(10).seconds.do(sayHello).unitl("12:00")
 
 while True:
     schedule.run_pending()
